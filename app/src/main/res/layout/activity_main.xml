@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        for top -->
+        <LinearLayout
+            android:id="@+id/linear_top"
+            android:background="@color/backgroundcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_title"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu24"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:text="@string/text_schedule"
+                        android:textColor="@color/whitecolor"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:id="@+id/rel_week"
+                android:layout_below="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/curr_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/previous_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/leftarrow"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/display_current_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="AUGUST 2020"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_weight="3"/>
+                    <ImageView
+                        android:id="@+id/next_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/rightarrow"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/curr_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/week_one"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="week 1"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/roundedcorner"/>
+
+                    <TextView
+                        android:id="@+id/week_two"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="week 1"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/roundedcorner"/>
+
+                    <TextView
+                        android:id="@+id/week_three"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="week 1"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/roundedcorner"/>
+                    <TextView
+                        android:id="@+id/week_four"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="week 1"
+                        android:textSize="10dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:background="@drawable/roundedcorner"/>
+
+                    <TextView
+                        android:id="@+id/week_five"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="week 1"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/roundedcorner"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+<!--        for dates-->
+        <LinearLayout
+            android:id="@+id/linear_dates"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/linear_top"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+<!--        for card-->
+        <LinearLayout
+
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/linear_schedulingtask"
+            android:layout_below="@+id/linear_dates"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:background="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:background="@color/grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/thumbnail"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/thumbnail"
+                            android:padding="8dp"
+                            android:text="@string/fixed_text"
+                            android:textColor="@color/red"
+                            android:textStyle="bold"
+                            android:textSize="15dp" />
+
+
+                        <RelativeLayout
+                            android:layout_below="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:padding="16dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cvSingleUser"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="12dp">
+
+                                    <CheckBox android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/checkbox"
+                                        style="@style/CustomCheckbox02"/>
+                                    <TextView
+                                        android:id="@+id/tvProfileName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="20sp"
+                                        android:layout_toRightOf="@id/checkbox" />
+
+
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+<!--        end cards-->
+
+<!--     floating button-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            -->
+<!--            android:id="@+id/floating_action_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_margin="16dp"-->
+<!--            app:srcCompat="@drawable/ic_check_circle_24"/>-->
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

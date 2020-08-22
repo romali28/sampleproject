@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Scheduling_Application</string>
+    <string name="text_schedule">Set Your Schedule</string>
+    <string name="week_one">Week 1</string>
+    <string name="fixed_text">Your Schedule</string>
+</resources>
