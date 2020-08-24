@@ -48,7 +48,7 @@
         android:id="@+id/schedule_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Date"
+        android:text="Schedule"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
